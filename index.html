@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 20
+        if (age < 18) {
+            console.log('you are a kid')
+        } else if (age <= 18 && age < 65) {
+            console.log('you are an adult')
+        } else if (age >= 65) {
+            console.log('you are a senior citizen')
+        }
+        
+        let adress = "north"
+        if (adress == "center" && age >= 65) {
+            console.log('you are a senior citizen and you live in center')
+        } else if (age < 65 && age >= 18 && adress != "center") {
+            console.log('you are an adult 18-65 and you dont live in center')
+        } else if (age < 65 && adress == "center") {
+            console.log('NO COMMENT')
+        } else if (age < 18) {
+            console.log('NO COMMENT')
+        }
+
+        let number = 8
+        if (number % 3 == 0) {
+            console.log("Can be divided by 3")
+        } if (number % 4 == 0) {
+            console.log("Can be divided by 4")
+        }
+    </script>
+</body>
+</html>
